@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.header{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 20vh;
+}
+
+div.header img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+div.header:hover img{
+    opacity: 0;
+}
+
+div.header:hover .insta img {
+    opacity: 1; 
+}
+
+.header .insta img {
+    opacity: 0; /* Default tidak terlihat */
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+div.nav{
+    background-color: rgb(189, 91, 91);
+    height: 10vh;
+}
+
+nav.navbar{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+div.main{
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    display: flex;
+    
+}
+div.main_left{
+    background-color: rgb(0, 0, 255);
+    flex: 1;
+}
+div.main_center{
+    background-color: rgb(255, 0, 0);
+    flex: 3;
+}
+div.main_right{
+    background-color: rgb(0, 255, 0);
+    flex: 1;
+}
+div.footer{
+    background-color: black;
+    height: 10vh;
+}
